@@ -23,16 +23,14 @@ body{
 
 .middle{
     margin: auto;
-    width: 40%;
+    width: 50%;
     height: 500px;
     border: 1px solid rgba(231, 0, 0, 0.5);
     padding: 50px;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.336);
     color:rgba(231, 0, 0, 0.5);
-    overflow-x: hidden;
-    overflow-y: auto;
-    text-align:justify;
+    overflow: auto;
+    text-align: justify;
     scrollbar-color: rgb(231, 0, 0) rgb(0, 0, 0);
     }
 
@@ -83,6 +81,7 @@ label{
     height: 500px;
     border: 1px solid rgba(231, 0, 0, 0.5);
     padding: 50px;
+    
     text-align: center;
     background-color: rgba(0, 0, 0, 0.336);
     color:rgba(231, 0, 0, 0.5);
@@ -90,6 +89,8 @@ label{
     overflow-y: auto;
     text-align:justify;
     scrollbar-color: rgb(231, 0, 0) rgb(0, 0, 0);
+    position: relative;
+    
     }
 
 .pictures{
@@ -106,6 +107,7 @@ label{
     text-align:justify;
     scrollbar-color: rgb(231, 0, 0) rgb(0, 0, 0);
 }
+
 
 .top{
     padding:20px;
@@ -189,3 +191,6 @@ a:hover{
 :root {
     color-scheme: dark;
   }
+
+html { overflow-y: scroll; }
+body { position: absolute; }
